@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header-nav{
+    background-color: grey;
+    border-radius: 0;
+    border: 0;
+}
+.navbar-header{
+    background-color: grey;
+}
+
+#nav-list {
+    background-color: #000;
+    text-align: center;
+}
+.navbar-brand .navbar-toggle{
+    background-color: grey;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+}
+
+/* changing the lines of the collapsible bar */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #000;
+}
+
+/* adjusting the backgrounf color for collapsible menu*/
+#nav-list a{
+    background-color: grey;
+    color: #000;
+} 
+
+
+.navbar-brand{
+    margin-top: 35px;
+}
+.navbar-brand h1{
+    margin-top: -5px;
+    color: #000;
+}
+.navbar .navbar-brand{
+    font-size: 35px;
+    margin-left: 60px;
+}
+.title {
+    text-align: center;
+    font-size: 25px;
+}
+#three-col{
+    height: 250px;
+    width: 100%;
+    margin-left: 5px;
+    padding: 15px;
+    
+}
+#chicken, #beef, #sushi {
+   border: 2px solid #000;
+   background-color: grey;
+   position: relative;
+   height: 250px;
+   width: 100%;
+   padding: 10px;
+   overflow: hidden;
+}
+.names {
+    text-align: center;
+}
+
+/* Inside the collapsible meny */
+#nav-list{
+    
+}
+
+/* Large device only */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #chicken, #beef, #sushi {
+        margin-bottom: 25px;
+     }
+     #nav-list{
+        position: fixed;
+        gap: 0;
+        flex-direction: column;
+        background-color: grey;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+     }
+}
+
+@media (min-width: 413px) and (max-width: 768px) {
+    #chicken, #beef, #sushi {
+        margin-bottom: 10px;
+     }
+}
+/* Super small */
+@media (min-width: 375px) and (max-width: 413px) {
+    #chicken, #beef, #sushi {
+        margin-bottom: 10px;
+     }
+}
